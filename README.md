@@ -1,6 +1,6 @@
-# 🌟 Vector Vision - An Image Search Engine
+# Vector Vision - An Image Search Engine
 
-### 🔍 Text & Image Based Retrieval using CLIP + FAISS + FastAPI + Streamlit
+### Text & Image Based Retrieval using CLIP + FAISS + FastAPI + Streamlit
 
 A fast and simple **image search engine** that supports:
 
@@ -15,9 +15,9 @@ Supports **real-time query image display**, adjustable **Top-K results**, and au
 
 ---
 
-# 🚀 Features
+# Features
 
-### 🔹 Upload & Rebuild Index
+###  Upload & Rebuild Index
 
 * Upload a `.zip` file containing images
 * Old dataset **automatically deleted**
@@ -26,7 +26,7 @@ Supports **real-time query image display**, adjustable **Top-K results**, and au
 
 ---
 
-### 🔹 Search by Text
+###  Search by Text
 
 Type any natural language query:
 
@@ -40,7 +40,7 @@ Returns the top-K most similar images using CLIP text embeddings.
 
 ---
 
-### 🔹 Search by Image
+###  Search by Image
 
 Upload an image → backend computes visual embeddings and retrieves **most similar images**.
 
@@ -52,7 +52,7 @@ Also shows:
 
 ---
 
-### 🔹 Streamlit Frontend
+###  Streamlit Frontend
 
 A clean UI built with Streamlit:
 
@@ -64,7 +64,7 @@ A clean UI built with Streamlit:
 
 ---
 
-### 🔹 Backend API (FastAPI)
+###  Backend API (FastAPI)
 
 * `/upload-folder/` → Upload dataset zip
 * `/search-text/` → Retrieve images from text query
@@ -73,7 +73,7 @@ A clean UI built with Streamlit:
 
 ---
 
-# 🧠 Tech Stack
+# Tech Stack
 
 | Component        | Technology                     |
 | ---------------- | ------------------------------ |
@@ -87,7 +87,7 @@ A clean UI built with Streamlit:
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```
 image-search-engine/
@@ -106,9 +106,9 @@ image-search-engine/
 
 ---
 
-# ⚙️ Installation & Setup
+# Installation & Setup
 
-## 📌 1. Clone the repo
+## 1. Clone the repo
 
 ```bash
 git clone https://github.com/yourusername/image-search-engine.git
@@ -117,9 +117,9 @@ cd image-search-engine
 
 ---
 
-# 🖥️ Backend Setup (FastAPI)
+# Backend Setup (FastAPI)
 
-## 1️⃣ Create virtual environment
+## 1️Create virtual environment
 
 ```bash
 cd backend
@@ -127,14 +127,14 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-## 2️⃣ Install dependencies
+## 2️Install dependencies
 
 ```bash
 pip install -U pip
 pip install fastapi uvicorn sentence-transformers faiss-cpu pillow
 ```
 
-## 3️⃣ Run backend server
+## 3️Run backend server
 
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
@@ -154,7 +154,7 @@ http://localhost:8000/images/...
 
 ---
 
-# 🎨 Frontend Setup (Streamlit)
+# Frontend Setup (Streamlit)
 
 Open a new terminal:
 
@@ -177,19 +177,19 @@ http://localhost:8501
 
 ---
 
-# 🧪 Usage Guide
+# Usage Guide
 
-## 🔹 Upload Dataset
+## Upload Dataset
 
 1. Go to the **Upload Dataset** tab
 2. Upload `images.zip`
 3. Index rebuilds automatically
 
-⚠️ Old dataset + index are deleted when new one is uploaded.
+Old dataset + index are deleted when new one is uploaded.
 
 ---
 
-## 🔹 Search by Text
+## Search by Text
 
 1. Enter a query
 2. Move slider to choose **Top-K**
@@ -198,7 +198,7 @@ http://localhost:8501
 
 ---
 
-## 🔹 Search by Image
+## Search by Image
 
 1. Upload an image
 2. Adjust **Top-K**
@@ -206,11 +206,11 @@ http://localhost:8501
 4. Query image shows up
 5. Retrieved images appear in grid
 
-💡 Previous query image is automatically deleted from the server.
+Previous query image is automatically deleted from the server.
 
 ---
 
-# 🧹 Automatic Query Image Cleanup
+# Automatic Query Image Cleanup
 
 Each time a new query image is uploaded:
 
@@ -219,19 +219,6 @@ Each time a new query image is uploaded:
 * Prevents caching issues
 * Always shows the latest query image
 
----
-
-
-# 🤝 Contributing
-
-Pull requests are welcome!
-If you find a bug, open an issue or message me.
-
----
-
-# 📜 License
-
-MIT License © 2025
 
 
 
